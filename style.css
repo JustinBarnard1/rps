@@ -19,6 +19,14 @@ footer{
     height: 75px;
 }
 
+img{
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .row-height{
     height: 400px;
 }
@@ -28,4 +36,8 @@ footer{
     background-size: cover;
     background-position: center center;
     height: 100%
+}
+
+.btn-width{
+    width: 100px;
 }

@@ -1,15 +1,15 @@
 actions = [
     {
         rock: "rock",
-        img: '//placehold.it/250x250'
+        img: "./knight.png"
     },
     {
         paper: "paper",
-        img: '//placehold.it/250x250'
+        img: "./wizard.png"
     },
     {
         scissors: "scissors",
-        img: '//placehold.it/250x250'
+        img: "./archer.png"
     }
 ]
 function draw() {
