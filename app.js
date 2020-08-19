@@ -1,13 +1,25 @@
-
-
+actions = [
+    {
+        rock: "rock",
+        img: '//placehold.it/250x250'
+    },
+    {
+        paper: "paper",
+        img: '//placehold.it/250x250'
+    },
+    {
+        scissors: "scissors",
+        img: '//placehold.it/250x250'
+    }
+]
 function draw() {
-    let template = ""
-    actions.forEach(action => {
-        template +=
+    // let template = ""
+    // actions.forEach(action => {
+    //     template +=
 
-        //template here
-    })
-    document.getElementById().innerHTML = template
+    //template here
+    //})
+    // document.getElementById().innerHTML = template
 }
 
 function random() {
