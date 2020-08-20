@@ -135,5 +135,7 @@ function random() {
 
 function getStarted() {
     document.getElementById("welcome").remove();
+    document.getElementById("header").remove();
+    document.getElementById("footer").remove();
     draw();
 }
