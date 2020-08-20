@@ -51,40 +51,81 @@ function draw() {
 //     console.log("testing")
 // }
 
+function whichOne1(action1) {
+    let image = document.getElementById("player")
+    if (action1 === "knight") {
+        image.src = "./knight.png"
+    }
+    if (action1 === "wizard") {
+        image.src = "./wizard.png"
+    }
+    if (action1 === "archer") {
+        image.src = "./archer.png"
+    }
+}
+
+function whichOne2(action2) {
+    if (action2 === "knight") {
+        document.getElementById("opponent").src = "./knight.png"
+    }
+    if (action2 === "wizard") {
+        document.getElementById("opponent").src = "./wizard.png"
+    }
+    if (action2 === "archer") {
+        document.getElementById("opponent").src = "./archer.png"
+    }
+}
+
 function whoWins(action1) {
     let action2 = random()
     console.log(action1, action2)
-    document.getElementById("opponent").innerHTML = action2
-    document.getElementById("player").innerHTML = action1
+    //document.getElementById("opponent") = action2.img
+    //document.getElementById("player") = action1.img
     if (action1 === action2) {
+        whichOne1(action1)
+        whichOne2(action2)
         return document.getElementById("winner").innerText = "Tie";
     }
     else if (action1 === "knight") {
         if (action2 === "archer") {
+            whichOne1(action1)
+            whichOne2(action2)
             return document.getElementById("winner").innerText = "knight wins";
         }
         else if (action2 === "wizard") {
+            whichOne1(action1)
+            whichOne2(action2)
             return document.getElementById("winner").innerText = "wizard wins";
         }
     }
     else if (action1 === "wizard") {
         if (action2 === "archer") {
+            whichOne1(action1)
+            whichOne2(action2)
             return document.getElementById("winner").innerText = "archer wins";
         }
         else if (action2 === "knight") {
+            whichOne1(action1)
+            whichOne2(action2)
             return document.getElementById("winner").innerText = "wizard wins";
         }
     }
     else if (action1 === "archer") {
         if (action2 === "wizard") {
+            whichOne1(action1)
+            whichOne2(action2)
             return document.getElementById("winner").innerText = "archer win";
         }
         else if (action2 === "knight") {
+            whichOne1(action1)
+            whichOne2(action2)
             return document.getElementById("winner").innerText = "knight wins";
         }
     }
-    draw()
 }
+
+
+
 
 function random() {
     let index = Math.floor(Math.random() * (actions.length - 0.01))
