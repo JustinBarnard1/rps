@@ -1,5 +1,5 @@
 body{
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     height:100%
@@ -12,11 +12,11 @@ main{
 }
 
 header{
-height: 100px
+height: 75px
 }
 
 footer{
-    height: 75px;
+    height: 50px;
 }
 
 img{
@@ -28,7 +28,7 @@ img{
 }
 
 .row-height{
-    height: 400px;
+    height: 375px;
 }
 
 .bg-table{
